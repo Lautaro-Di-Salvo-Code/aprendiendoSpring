@@ -13,9 +13,14 @@ public class AppController  {
     @ResponseBody
     public UniendoDatosDTOPattern dataPropiedad(@PathVariable int idPropiedad){
 
-    Domicilio domi = new Domicilio(1, "Alvear", 34);
+    Domicilio domi =
+            new Domicilio(1,
+                    "Alvear", 34);
 
-    DatosPersona data_person = new DatosPersona(23, "Julian", "Alvarez", "Carpintero","soltero", 80.4 );
+    DatosPersona data_person =
+            new DatosPersona(23, "Julian",
+            "Alvarez","Carpintero",
+            "soltero", 80.4 );
 
         UniendoDatosDTOPattern DTOpattern = new UniendoDatosDTOPattern();
         DTOpattern.setIdPropiedad(domi.getIdPropiedad());
@@ -28,7 +33,5 @@ public class AppController  {
 
         return DTOpattern;
 }
-
-
 
 }

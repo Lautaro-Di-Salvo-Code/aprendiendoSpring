@@ -4,8 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.web.bind.annotation.RestController;
 
-@Getter
-@Setter
+@Getter @Setter
 public class UniendoDatosDTOPattern  {
 //    Acá está la unificacion de los datos que seria propiedadDTO de luisina
     private int idPropiedad;
@@ -17,7 +16,9 @@ public class UniendoDatosDTOPattern  {
 
     public UniendoDatosDTOPattern() {
     }
-    public UniendoDatosDTOPattern(int idPropiedad, String direccion, int num_depto,int edad, String nombre, String apellido, String profesion) {
+    public UniendoDatosDTOPattern(int idPropiedad, String direccion,
+                                  int num_depto,int edad, String nombre,
+                                  String apellido, String profesion) {
         this.idPropiedad = idPropiedad;
         this.direccion = direccion;
         this.num_depto = num_depto;
