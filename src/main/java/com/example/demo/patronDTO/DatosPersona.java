@@ -12,7 +12,9 @@ public class DatosPersona {
     private  String estado_civil;
     private  double pesoCorporal;
 
-    public DatosPersona(int edad, String nombre, String apellido, String profesion, String estado_civil, double pesoCorporal) {
+    public DatosPersona(int edad, String nombre, String apellido,
+                        String profesion, String estado_civil,
+                        double pesoCorporal) {
         this.edad = edad;
         this.nombre = nombre;
         this.apellido = apellido;

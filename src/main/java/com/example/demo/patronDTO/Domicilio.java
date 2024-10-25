@@ -10,7 +10,9 @@ public class Domicilio {
     private String direccion;
     private int num_depto;
 
-    public Domicilio(int idPropiedad, String direccion, int num_depto) {
+    public Domicilio(int idPropiedad,
+                     String direccion,
+                     int num_depto) {
         this.idPropiedad = idPropiedad;
         this.direccion = direccion;
         this.num_depto = num_depto;
