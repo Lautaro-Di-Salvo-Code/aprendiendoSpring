@@ -1,4 +1,4 @@
-package com.example.demo.springBasics;
+package com.example.demo.ab_SpringBasics;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,7 +12,6 @@ import java.util.List;
 
 @RestController
 public class RepasoResponseEntity {
-
     @GetMapping("/persona")
     @ResponseBody
     public List<DatosPersona> leerPersonas(){
